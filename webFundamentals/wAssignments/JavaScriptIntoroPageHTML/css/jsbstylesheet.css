@@ -1,0 +1,114 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    width: 1200px;
+    height: 1000px;
+    background-color: black;
+}
+.container {
+   
+    background-color: #466699;
+    width: 1200px;
+    height: 800px;
+    padding: 10px;
+   
+}
+/* .container {
+    justify-content: center;
+    
+} */
+.container span{
+    color: purple;
+}
+/* .header {
+    /* margin: 10px 10px;
+    padding: 10px;
+    background-color: #b74343; 
+} */
+
+#javascript {
+    background-color: #b74343;
+    color: rgb(159, 165, 182);
+    width: 98.5%;
+    height: 80px;
+    margin-left: 10px;
+    /* margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px; */
+    border-radius: 10px;
+    
+
+}
+
+#javascript h1 {
+    padding: 20px;
+}
+
+.home {
+    width: 200px;
+    height: 230px;
+    background-color: #5fc1d3;
+    border-radius: 20px;
+     padding: 10px;
+    margin: 10px;
+    /* display: inline-block; */
+}
+
+.home ul {
+    padding-left: 20px;
+    padding-top: 0px;
+
+} 
+.home ul ul { 
+    width: 300px; list-style: circle; line-height: normal;
+}
+
+
+p, h2 {
+    color: #cfd2d4
+}
+#headbody {
+    display: flex;
+    margin: 10px;
+    /* padding: 10px; */
+
+}
+.main {
+    width: 75%;
+    height: auto;
+    background-color: rgb(2, 2, 5);
+    border-radius: 15px;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+.bulletpoints ul {
+    list-style: none; 
+    line-height: normal;
+    padding: 5px;
+    color: cyan;
+}
+
+.headbody {
+    position: relative;
+    display: inline-block;
+    /* background-color: aquamarine; */
+}
+
+#footer {
+    width: 98.5;
+    height: 50px;
+    background-color: #5c6672;
+    border-radius: 30px;
+
+}
+
+#footer p {
+    margin: 10px;
+    padding: 10px;
+}

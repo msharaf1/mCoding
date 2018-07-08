@@ -81,6 +81,7 @@ def minArr(arr):
 print(minArr([2,-4,5,8, 482, 112, -9, 13, 3, 1]))
 #print(minArr([2,-4,5,8]))
  """
+ #7
 def maxValue(arr):
     if len(arr) == "":
         return False

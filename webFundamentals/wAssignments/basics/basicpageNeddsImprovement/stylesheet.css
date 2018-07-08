@@ -1,0 +1,92 @@
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* a, p, h1, h2, h3, h4, h5, h6, input, button,textarea, label{
+	font-family: 'Arial', 'Helvetica', sans-serif; #062134*/
+
+.container {
+  background-color: lightblue;
+	width: 1000px;
+	min-height: 1000px;
+	margin: 0 auto;
+  /* display: inline-inline-block; */
+
+}
+.container h1 {
+  /* width: 979px;
+  height: auto; */
+  color: green;
+  /* padding: 10px; */
+  background-color: rgba(150,190.200, 0.7);
+  /* display: inline; */
+
+}
+
+.links ul, li {
+  display: inline-block;
+}
+
+#nav ul{
+  background-color: blue;
+}
+.head2 img {
+  width: 970px;
+  height: 400px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.head3 {
+  width:400px;
+  min-height: 300px;
+  margin: 5px auto;
+  background-color: blue;
+  display: inline;
+}
+
+.head3 h2, h3 {
+  font-family: fantasy;
+  color: white;
+  /* display: flex; */
+}
+#va {
+  padding: 5px;
+  color: green;
+  background-color: white;
+  padding-top: 5px;
+  margin-bottom: 5px;
+}
+.head3 p {
+  color: white;
+}
+
+.head3 h3 {
+  color: yellow;
+  margin-top: 5px;
+  background-color: black;
+}
+
+.head4 {
+  width: 400px;
+  height: 300px;
+  margin-top: 5px auto;
+}
+/*
+p a {
+  text-decoration: none;
+}
+
+Pseudo-class selectors:
+a:hover {
+  color:black;
+}
+<a href="https://google.com"> linke</a>
+
+a{
+  background-color: purple;
+  padding: 6px;
+} */
