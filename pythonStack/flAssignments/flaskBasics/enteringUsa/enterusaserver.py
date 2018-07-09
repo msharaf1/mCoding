@@ -5,15 +5,15 @@ app = Flask(__name__)
 def index():
     return (render_template("index.html"))
 
-@app.route("/first")
+@app.route("/states")
 def first():
     return (render_template("states.html"))
 
-@app.route("/second")
+@app.route("/cities")
 def second():
     return (render_template("cities.html"))
 
-@app.route("/third")
+@app.route("/food")
 def third():
     return (render_template("food.html"))
 
