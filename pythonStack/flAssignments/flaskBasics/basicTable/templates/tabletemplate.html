@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information</title>
+    <style>
+        table {
+            margin: 20px;
+            width: 500px;
+            border: 3px solid lightblue;
+        }
+        td {
+            border: 1px solid rgb(99, 84, 58);
+        }
+        th {
+            border: 1px solid green;
+        }
+
+    </style>
+</head>
+    <body>
+            <table>
+                <tr>
+                    <th>First Name</th>
+                        <th>Last Name</th>
+                </tr>
+                    {% for user in users %}
+                    <tr>
+                        <td>{{ user["first_name"] }}</td>
+                        <td>{{ user["last_name"]}}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+
+    <!-- <h1>Hello Students of the Dojo of the Galaxies</h1>
+
+        <table>
+            <th >First_name</th>
+            <th >Last_name</th>
+             {% for i in users %}   
+            <tr>
+                <th> {{i["first_name"]}} </th>
+                <th> {{i["last_name"]}} </th><br/>
+            </tr>
+
+        {%endfor%}
+
+    </table>
+    -->
+
+
+    </body>
+</html>
