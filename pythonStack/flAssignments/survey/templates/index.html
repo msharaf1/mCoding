@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Web Form</title>
+
+    </head>
+    <body>
+        <fieldset>
+        <legend>Survey</legend>
+            <form action="/process" method="POST"> 
+                <p>Name: <input type="text" name="name" placeholder="Youre name ..."> </p>
+            <p>Location:
+                <select name="location">
+                    <option>VA</option>
+                    <option>DC</option>
+                    <option>MD</option>
+                    <option>FL</option>
+                    <option>TX</option>
+                </select>
+            </p>
+            <p>
+                Language:
+                <select name="language">
+                    <option>Rubi</option>
+                    <optoin>HTML</optoin>
+                    <optoin>CSS</optoin>
+                    <option>Java</option>
+                    <option>Python</opt>
+                </select>
+            </p>
+            <p>Comment: <br>
+            <textarea name ="comments" rows="5" cols="50" placeholder="Your comments..."></textarea>
+        </p>
+            <input type="submit">
+        </form>
+        </fieldset>
+
+    </body>
+</html>
