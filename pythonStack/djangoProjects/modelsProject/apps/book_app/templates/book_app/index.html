@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        .mainContainer {
+            width: 100%;
+            border: 2px solid black;
+            position: relative;
+            
+            
+        }
+
+        .booksContainer {
+            width: 25%;
+            height: 25%;
+            border: 2px solid lightgray;
+            margin: 10px;
+            padding: 10px;
+            display: inline-block;
+            vertical-align: top;
+            
+                        
+        }
+        .authorContainer {
+            width: 25%;
+            height: 20%;
+            margin: 10px;
+            padding: 10px;
+            
+            border: 2px solid lightslategray;
+            display: inline-block;
+            vertical-align: top;
+            
+        }
+        .bookList {
+            width: 25%;
+            height: 20%;
+            border: 2px solid lightgray;
+            margin: 10px;
+            padding: 10px;
+            display: inline-block;
+            
+                        
+        }
+        .authorList {
+            width: 25%;
+            height: 20%;
+            margin: 10px;
+            padding: 10px;
+            
+            border: 2px solid lightslategray;
+            display: inline-block;
+            vertical-align: top;
+        }
+    </style>
+    </style>
+
+    <title>Home Page!</title>
+</head>
+<body>
+    
+    <div class="mainContainer"> 
+            <h1>Dojo Book Store!</h1>
+        <div class="booksContainer">
+            <form action="/createBook" method="POST">
+                {% csrf_token %}
+                <input type="hidden" name="bookId">
+
+                <p>Book Name: <input type="text" name="bookName">   </p>
+                <p>Description: <input type="text" name="description"> </p>
+                <p>Add a book: <input type="submit" name="addABook">
+            </form>
+        </div>
+
+        <div class="authorContainer">
+            <form action="/createAuthor" method="POST">
+                {% csrf_token %}
+                <input type="hidden" name="authId">
+                
+                <p>First Name: <input type="text" name="firstName"> </p>
+                <p>Last Name: <input type="text" name="lastName">   </p>
+                <p>Email:     <input type="text" name="email">          </p>
+
+                <p>Add an Author:<input type="submit" name="addAuthor"> </p>
+
+
+            </form>
+
+        </div>
+    
+    <div class="subContainer">
+            <div class="bookList">
+                <h3>Available Books for Sale!</h3>
+                <ul>
+                {% for book in bookData %}
+                   <li><p>Book Name:  {{ book.bookName }} Description: {{book.description}} </p></li>
+                   
+                {% endfor %}
+                </ul>
+
+            </div>
+            <div class="authorList">
+                <h3>Authors</h3>
+                {% for author in authorData%}
+                    <p> Author Name: {{author.firstName}}: {{ author.lastName}} </p>
+                {% endfor %}
+        </div>
+
+    </div>
+    </div>
+</body>
+</html>
