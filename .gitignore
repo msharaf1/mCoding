@@ -2,7 +2,7 @@
 djanEnv
 .DS_Store
 .vscode
-
+.pem
 # General
 .DS_Store
 .AppleDouble
